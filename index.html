@@ -1,29 +1,87 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UAD给排水规范查询</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-blue-500 text-white font-sans flex justify-center items-center h-screen">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">点击右下角图标进入查询!</h1>
-        <p class="text-xl">UAD给排水专业</p>
-    </div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restored Background Color</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'block-1': '#845ec2',
+                            'block-2': '#d65db1',
+                            'block-3': '#ff6f91',
+                            'block-4': '#ff9671',
+                            'block-5': '#ffc75f',
+                            'custom-blue': '#0081CF',
+                            'custom-bg': '#4875de' /* Restored to original background color */
+                        }
+                    }
+                }
+            }
+        </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-custom-bg min-h-screen flex flex-col items-center py-12">
+        <div class="text-custom-blue text-4xl font-bold mb-8">UAD给排水专业</div>
+        
+        <div class="w-full max-w-md flex flex-col gap-5 px-6">
+            <a href="https://bcnohiv86l51.feishu.cn/base/KFsXbOZLJaqQ1SsAbYTcDaYqnrH" 
+               class="block h-20 bg-block-1 rounded-md shadow-lg 
+                      hover:shadow-xl hover:translate-y-[-2px] hover:brightness-110
+                      transition-all duration-300
+                      flex items-center justify-center text-white text-2xl">
+                <i class="fas fa-star mr-3"></i> 资料库
+            </a>
+            <a href="https://bcnohiv86l51.feishu.cn/base/QgJYbwkpiahwposqg2NcX7a6nyc?from=from_copylink" 
+               class="block h-20 bg-block-2 rounded-md shadow-lg 
+                      hover:shadow-xl hover:translate-y-[-2px] hover:brightness-110
+                      transition-all duration-300
+                      flex items-center justify-center text-white text-2xl">
+                <i class="fas fa-heart mr-3"></i> 样本库
+            </a>
+            <a href="https://gf.cabr-fire.com/m/" 
+               class="block h-20 bg-block-3 rounded-md shadow-lg 
+                      hover:shadow-xl hover:translate-y-[-2px] hover:brightness-110
+                      transition-all duration-300
+                      flex items-center justify-center text-white text-2xl">
+                <i class="fas fa-bell mr-3"></i> 消防规范查询
+            </a>
+            <a href="https://tinywow.com/tools/pdf" 
+               class="block h-20 bg-block-4 rounded-md shadow-lg 
+                      hover:shadow-xl hover:translate-y-[-2px] hover:brightness-110
+                      transition-all duration-300
+                      flex items-center justify-center text-white text-2xl">
+                <i class="fas fa-cog mr-3"></i> pdf转换工具
+            </a>
+            <a href="#" 
+               class="block h-20 bg-block-5 rounded-md shadow-lg 
+                      hover:shadow-xl hover:translate-y-[-2px] hover:brightness-110
+                      transition-all duration-300
+                      flex items-center justify-center text-white text-2xl">
+                <i class="fas fa-leaf mr-3"></i> Block 5
+            </a>
+        </div>
 
-      <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/0.1.0-beta.6/libs/cn/index.js"></script>
+        <div class="text-custom-blue text-xl font-bold mt-8">请点击右下角图标进入查询</div>
+
+
+
+      <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/0.1.0-beta.7/libs/cn/index.js"></script>
       <script>
           new CozeWebSDK.WebChatClient({
             config: {
-              bot_id: '7417105380746444826',
+              bot_id: '7428842893705494566',
             },
             componentProps: {
               title: 'UAD',
             },
           });
       </script>
-    
-</body>
-</html>
+
+
+
+    </body>
+    </html>
